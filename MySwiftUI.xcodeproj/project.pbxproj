@@ -15,6 +15,7 @@
 		86627D6927341BF60044A980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86627D6727341BF60044A980 /* LaunchScreen.storyboard */; };
 		86627D7427341BF60044A980 /* MySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D7327341BF60044A980 /* MySwiftUITests.swift */; };
 		86627D7F27341BF60044A980 /* MySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D7E27341BF60044A980 /* MySwiftUIUITests.swift */; };
+		86627D99273D54E10044A980 /* LoremService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D98273D54E10044A980 /* LoremService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		86627D7A27341BF60044A980 /* MySwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86627D7E27341BF60044A980 /* MySwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIUITests.swift; sourceTree = "<group>"; };
 		86627D8027341BF60044A980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86627D98273D54E10044A980 /* LoremService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				86627D6727341BF60044A980 /* LaunchScreen.storyboard */,
 				86627D6A27341BF60044A980 /* Info.plist */,
 				86627D6427341BF60044A980 /* Preview Content */,
+				86627D98273D54E10044A980 /* LoremService.swift */,
 			);
 			path = MySwiftUI;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
+				86627D99273D54E10044A980 /* LoremService.swift in Sources */,
 				86627D5F27341BF50044A980 /* SceneDelegate.swift in Sources */,
 				86627D6127341BF50044A980 /* ContentView.swift in Sources */,
 			);
