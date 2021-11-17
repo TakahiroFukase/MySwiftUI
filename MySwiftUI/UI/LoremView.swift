@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct LoremView: View {
+    
+    @ObservedObject var loremViewModel = LoremViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        VStack {
+            Text("LoremView")
+                .font(.title)
+            
+            Divider()
+            
+            Text(loremViewModel.data)
+                .font(.body)
+                .padding(10)
+            
+            Divider()
+            
+            Spacer(minLength: 0)
+        }
+        
     }
 }
 
