@@ -16,6 +16,7 @@
 		86627D7427341BF60044A980 /* MySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D7327341BF60044A980 /* MySwiftUITests.swift */; };
 		86627D7F27341BF60044A980 /* MySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D7E27341BF60044A980 /* MySwiftUIUITests.swift */; };
 		86627D99273D54E10044A980 /* LoremService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D98273D54E10044A980 /* LoremService.swift */; };
+		86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627DA5273E918B0044A980 /* LoremViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		86627D7E27341BF60044A980 /* MySwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIUITests.swift; sourceTree = "<group>"; };
 		86627D8027341BF60044A980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86627D98273D54E10044A980 /* LoremService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremService.swift; sourceTree = "<group>"; };
+		86627DA5273E918B0044A980 /* LoremViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				86627D5E27341BF50044A980 /* SceneDelegate.swift */,
 				86627D6227341BF60044A980 /* Assets.xcassets */,
 				86627DA2273E90400044A980 /* UI */,
+				86627DA4273E91570044A980 /* ViewModel */,
 				86627DA3273E904D0044A980 /* Service */,
 				86627D6727341BF60044A980 /* LaunchScreen.storyboard */,
 				86627D6A27341BF60044A980 /* Info.plist */,
@@ -153,6 +156,14 @@
 				86627D98273D54E10044A980 /* LoremService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		86627DA4273E91570044A980 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86627DA5273E918B0044A980 /* LoremViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */,
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
 				86627D99273D54E10044A980 /* LoremService.swift in Sources */,
 				86627D5F27341BF50044A980 /* SceneDelegate.swift in Sources */,
