@@ -9,10 +9,7 @@ import Foundation
 
 struct NeetQuestion: Codable, Identifiable {
     
-    // Identifiableに準拠するためにidを定義する
-    var id: UUID? = UUID()
-    
-    // APIから取得する情報は以下の3項目
+    var id: Int
     let text: String
     let yesIsNeet: Bool
     let extraNeetPoint: Int
