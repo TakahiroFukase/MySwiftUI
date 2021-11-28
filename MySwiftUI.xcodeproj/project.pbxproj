@@ -24,6 +24,7 @@
 		86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627DA5273E918B0044A980 /* LoremViewModel.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
+		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		86627DA5273E918B0044A980 /* LoremViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremViewModel.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
+		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				86627D6027341BF50044A980 /* ContentView.swift */,
 				8643C11E2744BBA000BB9E04 /* LoremView.swift */,
 				8643C136274681D200BB9E04 /* NeetQuestionView.swift */,
+				868C6572275352E2008D6C7C /* PicsumView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				8643C137274681D200BB9E04 /* NeetQuestionView.swift in Sources */,
 				86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */,
 				868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */,
+				868C6573275352E2008D6C7C /* PicsumView.swift in Sources */,
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
 				8643C132274680EE00BB9E04 /* NeetQuestionViewModel.swift in Sources */,
 				86627D99273D54E10044A980 /* LoremService.swift in Sources */,
