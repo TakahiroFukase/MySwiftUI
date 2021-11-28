@@ -22,6 +22,7 @@
 		86627D7F27341BF60044A980 /* MySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D7E27341BF60044A980 /* MySwiftUIUITests.swift */; };
 		86627D99273D54E10044A980 /* LoremService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D98273D54E10044A980 /* LoremService.swift */; };
 		86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627DA5273E918B0044A980 /* LoremViewModel.swift */; };
+		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		86627D8027341BF60044A980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86627D98273D54E10044A980 /* LoremService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremService.swift; sourceTree = "<group>"; };
 		86627DA5273E918B0044A980 /* LoremViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremViewModel.swift; sourceTree = "<group>"; };
+		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				86627D98273D54E10044A980 /* LoremService.swift */,
 				8643C123274534B500BB9E04 /* NeetQuestionService.swift */,
+				868C656827534D5C008D6C7C /* PicsumService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				8643C11F2744BBA000BB9E04 /* LoremView.swift in Sources */,
 				8643C12A27467FAA00BB9E04 /* NeetQuestion.swift in Sources */,
+				868C656927534D5C008D6C7C /* PicsumService.swift in Sources */,
 				8643C137274681D200BB9E04 /* NeetQuestionView.swift in Sources */,
 				86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */,
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
