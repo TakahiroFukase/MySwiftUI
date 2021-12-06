@@ -34,9 +34,13 @@ struct PicsumView: View {
             Divider()
             
             Image(uiImage: picsumViewModel.image)
+            
+            Text("ID: \(count)")
+                .font(.body)
+                .bold()
+            
+            Spacer(minLength: 0)
         }
-        
-        Spacer(minLength: 0)
     }
 }
 
