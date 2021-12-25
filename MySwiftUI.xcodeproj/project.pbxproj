@@ -25,6 +25,7 @@
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
+		8692B6EB275E3CF600D58B87 /* TextFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692B6EA275E3CF600D58B87 /* TextFileService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
+		8692B6EA275E3CF600D58B87 /* TextFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				86627D98273D54E10044A980 /* LoremService.swift */,
 				8643C123274534B500BB9E04 /* NeetQuestionService.swift */,
 				868C656827534D5C008D6C7C /* PicsumService.swift */,
+				8692B6EA275E3CF600D58B87 /* TextFileService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8692B6EB275E3CF600D58B87 /* TextFileService.swift in Sources */,
 				8643C11F2744BBA000BB9E04 /* LoremView.swift in Sources */,
 				8643C12A27467FAA00BB9E04 /* NeetQuestion.swift in Sources */,
 				868C656927534D5C008D6C7C /* PicsumService.swift in Sources */,
