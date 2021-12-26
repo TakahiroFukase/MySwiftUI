@@ -28,12 +28,14 @@ class TextFileService {
         
         guard let pathToTextFile = pathToTextFile else {
             // そもそもパスを作るのに失敗している場合
-            return "Failed to create path."
+            print("Failed to create path.")
+            return ""
         }
         
         guard let text = try? String(contentsOf: pathToTextFile, encoding: .utf8) else {
             // パスのテキストファイルからUTF-8形式で文字列を取り出すのに失敗した場合（まだファイルに何も保存してなければここに来る）
-            return "Failed to get data."
+            print("Failed to get data.")
+            return ""
         }
         
         return text
@@ -43,6 +45,7 @@ class TextFileService {
         
         guard let pathToTextFile = pathToTextFile else {
             // そもそもパスを作るのに失敗している場合
+            print("Failed to create path.")
             return
         }
         
