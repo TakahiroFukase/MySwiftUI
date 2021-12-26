@@ -27,6 +27,7 @@
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
 		8692B6EB275E3CF600D58B87 /* TextFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8692B6EA275E3CF600D58B87 /* TextFileService.swift */; };
 		86CA690E2778215700E88747 /* TextFileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA690D2778215700E88747 /* TextFileViewModel.swift */; };
+		86CA69132778229400E88747 /* TextFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CA69122778229400E88747 /* TextFileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
 		8692B6EA275E3CF600D58B87 /* TextFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileService.swift; sourceTree = "<group>"; };
 		86CA690D2778215700E88747 /* TextFileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileViewModel.swift; sourceTree = "<group>"; };
+		86CA69122778229400E88747 /* TextFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				8643C11E2744BBA000BB9E04 /* LoremView.swift */,
 				8643C136274681D200BB9E04 /* NeetQuestionView.swift */,
 				868C6572275352E2008D6C7C /* PicsumView.swift */,
+				86CA69122778229400E88747 /* TextFileView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				8643C132274680EE00BB9E04 /* NeetQuestionViewModel.swift in Sources */,
 				86627D99273D54E10044A980 /* LoremService.swift in Sources */,
 				86627D5F27341BF50044A980 /* SceneDelegate.swift in Sources */,
+				86CA69132778229400E88747 /* TextFileView.swift in Sources */,
 				86627D6127341BF50044A980 /* ContentView.swift in Sources */,
 				8643C124274534B500BB9E04 /* NeetQuestionService.swift in Sources */,
 			);
