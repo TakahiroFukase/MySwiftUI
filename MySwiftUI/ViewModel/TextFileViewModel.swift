@@ -13,11 +13,7 @@ class TextFileViewModel: ObservableObject {
     
     let textFileService = TextFileService()
     
-    init() {
-        load()
-    }
-    
-    private func load() {
+    func load() {
         text = textFileService.getText()
     }
     
