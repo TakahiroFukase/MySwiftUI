@@ -20,19 +20,9 @@ struct BaseTabView: View {
                     Text("Content")
                 }
             
-            LoremView()
+            NetworkingBaseView()
                 .tabItem {
-                    Text("Lorem")
-                }
-            
-            NeetQuestionView()
-                .tabItem {
-                    Text("NeetQuestion")
-                }
-            
-            PicsumView()
-                .tabItem {
-                    Text("Picsum")
+                    Text("Network")
                 }
             
             ProfileView()

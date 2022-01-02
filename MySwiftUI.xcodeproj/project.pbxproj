@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		860A93C32781D2AE00D74E7E /* BaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93C22781D2AE00D74E7E /* BaseTabView.swift */; };
+		860A93D12781F1AD00D74E7E /* NetworkingBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93D02781F1AD00D74E7E /* NetworkingBaseView.swift */; };
 		8643C11F2744BBA000BB9E04 /* LoremView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C11E2744BBA000BB9E04 /* LoremView.swift */; };
 		8643C124274534B500BB9E04 /* NeetQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C123274534B500BB9E04 /* NeetQuestionService.swift */; };
 		8643C12A27467FAA00BB9E04 /* NeetQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C12927467FAA00BB9E04 /* NeetQuestion.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		860A93C22781D2AE00D74E7E /* BaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabView.swift; sourceTree = "<group>"; };
+		860A93D02781F1AD00D74E7E /* NetworkingBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingBaseView.swift; sourceTree = "<group>"; };
 		8643C11E2744BBA000BB9E04 /* LoremView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremView.swift; sourceTree = "<group>"; };
 		8643C123274534B500BB9E04 /* NeetQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeetQuestionService.swift; sourceTree = "<group>"; };
 		8643C12927467FAA00BB9E04 /* NeetQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeetQuestion.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				868C6572275352E2008D6C7C /* PicsumView.swift */,
 				86CA69122778229400E88747 /* ProfileView.swift */,
 				860A93C22781D2AE00D74E7E /* BaseTabView.swift */,
+				860A93D02781F1AD00D74E7E /* NetworkingBaseView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				86CA69132778229400E88747 /* ProfileView.swift in Sources */,
 				86627D6127341BF50044A980 /* ContentView.swift in Sources */,
 				8643C124274534B500BB9E04 /* NeetQuestionService.swift in Sources */,
+				860A93D12781F1AD00D74E7E /* NetworkingBaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

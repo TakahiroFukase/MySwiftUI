@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PicsumView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var picsumViewModel = PicsumViewModel()
     
     @State var count: Int = 0
@@ -39,7 +41,21 @@ struct PicsumView: View {
                 .font(.body)
                 .bold()
             
-            Spacer(minLength: 0)
+            Spacer()
+            
+            Button(action: {
+                // この画面を閉じる
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("閉じる")
+                    .bold()
+                    .frame(width: 200, height: 50)
+                    .foregroundColor(.white)
+                    .background(Color.green)
+                    .cornerRadius(25)
+            })
+            
+            Spacer(minLength: 50).fixedSize()
         }
     }
 }

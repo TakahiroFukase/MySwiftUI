@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoremView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var loremViewModel = LoremViewModel()
     
     var body: some View {
@@ -24,8 +26,22 @@ struct LoremView: View {
                 .padding(10)
             
             Divider()
+                        
+            Spacer()
             
-            Spacer(minLength: 0)
+            Button(action: {
+                // この画面を閉じる
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("閉じる")
+                    .bold()
+                    .frame(width: 200, height: 50)
+                    .foregroundColor(.white)
+                    .background(Color.green)
+                    .cornerRadius(25)
+            })
+            
+            Spacer(minLength: 50).fixedSize()
         }
         
     }
