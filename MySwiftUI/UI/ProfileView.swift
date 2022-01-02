@@ -1,5 +1,5 @@
 //
-//  TextFileView.swift
+//  ProfileView.swift
 //  MySwiftUI
 //
 //  Created by Takahiro Fukase on 2021/12/26.
@@ -7,32 +7,42 @@
 
 import SwiftUI
 
-struct TextFileView: View {
+struct ProfileView: View {
     
-    @State var message = "Enter and Save!"
+    @State var registerMessage = ""
     @State var isPopoverPresented = false
     @State var isAlertPresented = false
     
-    @ObservedObject var viewModel = TextFileViewModel()
+    @ObservedObject var viewModel = ProfileViewModel()
     
     var body: some View {
         
         VStack {
-            
-            Spacer(minLength: 20).fixedSize()
-            
-            Text("First Page")
+                        
+            Text("プロフィール")
                 .font(.title)
             
             Divider()
             
+            HStack {
+                Text("お名前: ")
+                
+                Text(viewModel.registeredName)
+            }
+            
             Spacer()
             
             Button(action: {
-                viewModel.load()
+                
+                // 登録画面を表示した時のメッセージをセット
+                registerMessage = "Register Your Name!"
+                
+                // 登録画面に遷移する際、登録済みの名前をセットする
+                viewModel.setEditingName()
+                
                 isPopoverPresented = true
             }) {
-                Text("登録画面へ")
+                Text("登録 / 編集")
                     .bold()
                     .frame(width: 200, height: 50)
                     .foregroundColor(.white)
@@ -44,11 +54,13 @@ struct TextFileView: View {
             Spacer(minLength: 50).fixedSize()
         }
         .fullScreenCover(isPresented: $isPopoverPresented) {
+            
+            // 登録画面
             VStack {
                 
                 Spacer(minLength: 20).fixedSize()
                 
-                Text(message)
+                Text(registerMessage)
                     .font(.title)
                 
                 HStack {
@@ -63,7 +75,7 @@ struct TextFileView: View {
                 VStack {
                     Divider()
                     
-                    TextField("", text: $viewModel.text)
+                    TextField("", text: $viewModel.editingName)
                         .font(.body)
                         .padding(10)
                     
@@ -102,7 +114,7 @@ struct TextFileView: View {
                 Alert(title: Text("保存しますか？"),
                       primaryButton: .default(Text("保存"), action: {
                         viewModel.save()
-                        message = "Saved!"
+                        registerMessage = "Saved!"
                       }),
                       secondaryButton: .default(Text("キャンセル"))
                 )
@@ -111,8 +123,8 @@ struct TextFileView: View {
     }
 }
 
-struct TextFileView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        TextFileView()
+        ProfileView()
     }
 }

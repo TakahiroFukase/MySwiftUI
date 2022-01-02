@@ -38,9 +38,9 @@ struct BaseTabView: View {
                     Text("Picsum")
                 }
             
-            TextFileView()
+            ProfileView()
                 .tabItem {
-                    Text("TextFile")
+                    Text("Profile")
                 }
         }
     }
