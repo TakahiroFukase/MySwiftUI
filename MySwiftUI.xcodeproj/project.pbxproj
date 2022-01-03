@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		860A93C32781D2AE00D74E7E /* BaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93C22781D2AE00D74E7E /* BaseTabView.swift */; };
 		860A93D12781F1AD00D74E7E /* NetworkingBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93D02781F1AD00D74E7E /* NetworkingBaseView.swift */; };
+		860A93E62782E62000D74E7E /* ControlBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93E52782E62000D74E7E /* ControlBaseView.swift */; };
+		860A93EB2782E75300D74E7E /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93EA2782E75300D74E7E /* ToggleView.swift */; };
+		860A93F02782E76400D74E7E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93EF2782E76400D74E7E /* SliderView.swift */; };
+		860A93F52782E76C00D74E7E /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93F42782E76C00D74E7E /* StepperView.swift */; };
 		8643C11F2744BBA000BB9E04 /* LoremView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C11E2744BBA000BB9E04 /* LoremView.swift */; };
 		8643C124274534B500BB9E04 /* NeetQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C123274534B500BB9E04 /* NeetQuestionService.swift */; };
 		8643C12A27467FAA00BB9E04 /* NeetQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C12927467FAA00BB9E04 /* NeetQuestion.swift */; };
@@ -52,6 +56,10 @@
 /* Begin PBXFileReference section */
 		860A93C22781D2AE00D74E7E /* BaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabView.swift; sourceTree = "<group>"; };
 		860A93D02781F1AD00D74E7E /* NetworkingBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingBaseView.swift; sourceTree = "<group>"; };
+		860A93E52782E62000D74E7E /* ControlBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlBaseView.swift; sourceTree = "<group>"; };
+		860A93EA2782E75300D74E7E /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		860A93EF2782E76400D74E7E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		860A93F42782E76C00D74E7E /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		8643C11E2744BBA000BB9E04 /* LoremView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremView.swift; sourceTree = "<group>"; };
 		8643C123274534B500BB9E04 /* NeetQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeetQuestionService.swift; sourceTree = "<group>"; };
 		8643C12927467FAA00BB9E04 /* NeetQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeetQuestion.swift; sourceTree = "<group>"; };
@@ -193,6 +201,33 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
+		860A93E22782E5DA00D74E7E /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				860A93E32782E5FF00D74E7E /* Base */,
+				860A93E42782E60B00D74E7E /* Pages */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		860A93E32782E5FF00D74E7E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				860A93E52782E62000D74E7E /* ControlBaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		860A93E42782E60B00D74E7E /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				860A93EA2782E75300D74E7E /* ToggleView.swift */,
+				860A93EF2782E76400D74E7E /* SliderView.swift */,
+				860A93F42782E76C00D74E7E /* StepperView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		8643C12827467F7A00BB9E04 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +303,7 @@
 			children = (
 				860A93E02782E49500D74E7E /* BaseTab */,
 				860A93E12782E4B200D74E7E /* Content */,
+				860A93E22782E5DA00D74E7E /* Control */,
 				860A93D52782E30200D74E7E /* Networking */,
 				860A93DE2782E46600D74E7E /* LocalDB */,
 			);
@@ -421,10 +457,14 @@
 				8643C12A27467FAA00BB9E04 /* NeetQuestion.swift in Sources */,
 				868C656927534D5C008D6C7C /* PicsumService.swift in Sources */,
 				8643C137274681D200BB9E04 /* NeetQuestionView.swift in Sources */,
+				860A93F02782E76400D74E7E /* SliderView.swift in Sources */,
 				86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */,
 				868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */,
+				860A93EB2782E75300D74E7E /* ToggleView.swift in Sources */,
 				868C6573275352E2008D6C7C /* PicsumView.swift in Sources */,
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
+				860A93F52782E76C00D74E7E /* StepperView.swift in Sources */,
+				860A93E62782E62000D74E7E /* ControlBaseView.swift in Sources */,
 				8643C132274680EE00BB9E04 /* NeetQuestionViewModel.swift in Sources */,
 				860A93C32781D2AE00D74E7E /* BaseTabView.swift in Sources */,
 				86627D99273D54E10044A980 /* LoremService.swift in Sources */,

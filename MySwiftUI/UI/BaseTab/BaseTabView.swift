@@ -20,6 +20,11 @@ struct BaseTabView: View {
                     Text("Content")
                 }
             
+            ControlBaseView()
+                .tabItem {
+                    Text("Control")
+                }
+            
             NetworkingBaseView()
                 .tabItem {
                     Text("Network")
