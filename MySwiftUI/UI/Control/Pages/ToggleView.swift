@@ -23,6 +23,17 @@ struct ToggleView: View {
                 .frame(width: UIScreen.main.bounds.width,
                        height: UIScreen.main.bounds.width / 1096 * 1644)
             
+            HStack {
+                
+                Spacer()
+                
+                Text(isToggleOn ? "スイッチON" : " ")
+                    .foregroundColor(.red)
+                    .bold()
+                
+                Spacer(minLength: 10).fixedSize()
+            }
+            
             Spacer()
             
             Toggle(isOn: $isToggleOn, label: {
