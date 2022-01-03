@@ -20,11 +20,11 @@ struct ToggleView: View {
         })
         .padding(20)
         
-        Image(uiImage: isToggleOn ? UIImage(named: "toggle_on_sample")! : UIImage())
+        Image(uiImage: isToggleOn ? UIImage(named: "sample")! : UIImage())
             .resizable()
             .scaledToFit()
             .frame(width: UIScreen.main.bounds.width,
-                   height: UIScreen.main.bounds.width / 288 * 180)
+                   height: UIScreen.main.bounds.width / 1096 * 1644)
         
         Spacer()
         
