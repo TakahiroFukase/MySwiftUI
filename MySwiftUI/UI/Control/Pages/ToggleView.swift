@@ -15,32 +15,35 @@ struct ToggleView: View {
     
     var body: some View {
         
-        Image(uiImage: isToggleOn ? UIImage(named: "sample")! : UIImage())
-            .resizable()
-            .scaledToFit()
-            .frame(width: UIScreen.main.bounds.width,
-                   height: UIScreen.main.bounds.width / 1096 * 1644)
-        
-        Spacer()
-        
-        Toggle(isOn: $isToggleOn, label: {
-            Text("画像を表示")
-        })
-        .padding(.horizontal, 20)
-        
-        Button(action: {
-            // この画面を閉じる
-            presentationMode.wrappedValue.dismiss()
-        }, label: {
-            Text("閉じる")
-                .bold()
-                .frame(width: 200, height: 50)
-                .foregroundColor(.white)
-                .background(Color.gray)
-                .cornerRadius(25)
-        })
-        
-        Spacer(minLength: 50).fixedSize()
+        VStack {
+            
+            Image(uiImage: isToggleOn ? UIImage(named: "sample")! : UIImage())
+                .resizable()
+                .scaledToFit()
+                .frame(width: UIScreen.main.bounds.width,
+                       height: UIScreen.main.bounds.width / 1096 * 1644)
+            
+            Spacer()
+            
+            Toggle(isOn: $isToggleOn, label: {
+                Text("画像を表示")
+            })
+            .padding(.horizontal, 20)
+            
+            Button(action: {
+                // この画面を閉じる
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("閉じる")
+                    .bold()
+                    .frame(width: 200, height: 50)
+                    .foregroundColor(.white)
+                    .background(Color.gray)
+                    .cornerRadius(25)
+            })
+            
+            Spacer(minLength: 50).fixedSize()
+        }
     }
 }
 
