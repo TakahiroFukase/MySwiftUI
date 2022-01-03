@@ -188,6 +188,7 @@
 		860A93E12782E4B200D74E7E /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				86627D6027341BF50044A980 /* ContentView.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -265,7 +266,6 @@
 		86627DA2273E90400044A980 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				86627D6027341BF50044A980 /* ContentView.swift */,
 				860A93E02782E49500D74E7E /* BaseTab */,
 				860A93E12782E4B200D74E7E /* Content */,
 				860A93D52782E30200D74E7E /* Networking */,
