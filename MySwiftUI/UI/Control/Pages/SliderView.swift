@@ -11,8 +11,28 @@ struct SliderView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @State var sliderValue = 0.0
+    
     var body: some View {
-        Text("Hello, Slider!")
+        
+        Spacer(minLength: 50).fixedSize()
+        
+        ZStack {
+            
+            Image(uiImage: UIImage(named: "sample")!)
+                .resizable()
+                .scaledToFit()
+                .frame(width: UIScreen.main.bounds.width,
+                       height: UIScreen.main.bounds.width / 1096 * 1644)
+            
+            Text("")
+                .frame(width: UIScreen.main.bounds.width,
+                       height: UIScreen.main.bounds.width / 1096 * 1644)
+                .background(Color(red: 0, green: 0, blue: 0, opacity: 1 - (sliderValue / 100)))
+        }
+        
+        Slider(value: $sliderValue, in: 0...100, step: 10)
+            .padding(20)
         
         Spacer()
         
