@@ -15,10 +15,7 @@ struct ToggleView: View {
     
     var body: some View {
         
-        Toggle(isOn: $isToggleOn, label: {
-            Text("画像を表示")
-        })
-        .padding(20)
+        Spacer(minLength: 50).fixedSize()
         
         Image(uiImage: isToggleOn ? UIImage(named: "sample")! : UIImage())
             .resizable()
@@ -27,6 +24,11 @@ struct ToggleView: View {
                    height: UIScreen.main.bounds.width / 1096 * 1644)
         
         Spacer()
+        
+        Toggle(isOn: $isToggleOn, label: {
+            Text("画像を表示")
+        })
+        .padding(20)
         
         Button(action: {
             // この画面を閉じる
