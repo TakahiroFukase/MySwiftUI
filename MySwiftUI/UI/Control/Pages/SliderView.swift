@@ -14,6 +14,7 @@ struct SliderView: View {
     @State var topSliderValue = 0.0
     @State var middleSliderValue = 0.0
     @State var bottomSliderValue = 0.0
+    @State var allMaxMessage = ""
     
     let imageWidth = UIScreen.main.bounds.width - 50
     let imageHeight = (UIScreen.main.bounds.width - 50) / 1096 * 1644
@@ -29,6 +30,11 @@ struct SliderView: View {
                     .scaledToFit()
                     .frame(width: imageWidth,
                            height: imageHeight)
+                
+                Text(allMaxMessage)
+                    .font(.system(size: 50))
+                    .bold()
+                    .foregroundColor(.red)
 
                 VStack {
                     
@@ -51,14 +57,20 @@ struct SliderView: View {
             
             VStack {
                 
-                Slider(value: $topSliderValue, in: 0...100, step: 10)
-                    .padding(.horizontal, 20.0)
+                Slider(value: $topSliderValue, in: 0...100, step: 10, onEditingChanged: { started in
+                    onSliderEditingChanged(started: started)
+                })
+                .padding(.horizontal, 20.0)
                 
-                Slider(value: $middleSliderValue, in: 0...100, step: 10)
-                    .padding(.horizontal, 20.0)
+                Slider(value: $middleSliderValue, in: 0...100, step: 10, onEditingChanged: { started in
+                    onSliderEditingChanged(started: started)
+                })
+                .padding(.horizontal, 20.0)
                 
-                Slider(value: $bottomSliderValue, in: 0...100, step: 10)
-                    .padding(.horizontal, 20.0)
+                Slider(value: $bottomSliderValue, in: 0...100, step: 10, onEditingChanged: { started in
+                    onSliderEditingChanged(started: started)
+                })
+                .padding(.horizontal, 20.0)
             }
             
             Spacer()
@@ -76,6 +88,21 @@ struct SliderView: View {
             })
             
             Spacer(minLength: 50).fixedSize()
+        }
+    }
+    
+    private func onSliderEditingChanged(started: Bool) {
+        
+        if started {
+            // 編集が開始されたら文言を非表示にする
+            allMaxMessage = ""
+            
+        } else {
+            
+            if topSliderValue == 100 && middleSliderValue == 100 && bottomSliderValue == 100 {
+                // 編集終了時に全てのスライダーがマックスになっていたら文言を表示する
+                allMaxMessage = "ALL MAX!"
+            }
         }
     }
 }
