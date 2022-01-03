@@ -11,8 +11,20 @@ struct ToggleView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @State var isToggleOn = false
+    
     var body: some View {
-        Text("Hello, Toggle!")
+        
+        Toggle(isOn: $isToggleOn, label: {
+            Text("画像を表示")
+        })
+        .padding(20)
+        
+        Image(uiImage: isToggleOn ? UIImage(named: "toggle_on_sample")! : UIImage())
+            .resizable()
+            .scaledToFit()
+            .frame(width: UIScreen.main.bounds.width,
+                   height: UIScreen.main.bounds.width / 288 * 180)
         
         Spacer()
         
