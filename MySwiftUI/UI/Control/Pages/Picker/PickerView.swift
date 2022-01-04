@@ -17,36 +17,86 @@ struct PickerView: View {
         
         Spacer(minLength: 50).fixedSize()
         
-        HStack {
-            Spacer(minLength: 50).fixedSize()
+        VStack {
             
-            Text("ユーザーの性別: \(viewModel.registeredGender)")
-                .bold()
+            HStack {
+                Spacer(minLength: 50).fixedSize()
+                
+                Text("ユーザーの性別: \(viewModel.registeredGender)")
+                    .bold()
 
-            Spacer()
+                Spacer()
+            }
+            
+            Spacer(minLength: 20).fixedSize()
+            
+            Divider()
+        
+            Picker("", selection: $viewModel.selectedIndex, content: {
+                ForEach(0..<viewModel.genders.count) { index in
+                    Text(viewModel.genders[index])
+                }
+            })
+            .labelsHidden()
+            
+            Button(action: {
+                viewModel.registerGender()
+            }, label: {
+                Text("保存")
+                    .bold()
+                    .frame(width: 200, height: 50)
+                    .foregroundColor(.white)
+                    .background(Color.orange)
+                    .cornerRadius(25)
+            })
         }
         
-        Spacer(minLength: 20).fixedSize()
+        Spacer(minLength: 30).fixedSize()
         
-        Divider()
-        
-        Picker("", selection: $viewModel.selectedIndex, content: {
-            ForEach(0..<viewModel.genders.count) { index in
-                Text(viewModel.genders[index])
+        VStack {
+            
+            HStack {
+                Spacer(minLength: 50).fixedSize()
+                
+                Text("ユーザーの生年月日: \(viewModel.registeredBirthday)")
+                    .bold()
+
+                Spacer()
             }
-        })
-        .labelsHidden()
-        
-        Button(action: {
-            viewModel.registerGender()
-        }, label: {
-            Text("保存")
-                .bold()
-                .frame(width: 200, height: 50)
-                .foregroundColor(.white)
-                .background(Color.orange)
-                .cornerRadius(25)
-        })
+            
+            if !viewModel.canRegisterBirthday {
+                HStack {
+                    Spacer(minLength: 50).fixedSize()
+                    
+                    Text("生年月日は変更できません。")
+                        .foregroundColor(.red)
+                        .bold()
+
+                    Spacer()
+                }
+            }
+            
+            Spacer(minLength: 20).fixedSize()
+            
+            Divider()
+            
+            if viewModel.canRegisterBirthday {
+                DatePicker("", selection: $viewModel.date, displayedComponents: .date)
+                    .datePickerStyle(WheelDatePickerStyle())
+                    .labelsHidden()
+                
+                Button(action: {
+                    viewModel.registerBirthday()
+                }, label: {
+                    Text("保存")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+            }
+        }
         
         Spacer()
         
