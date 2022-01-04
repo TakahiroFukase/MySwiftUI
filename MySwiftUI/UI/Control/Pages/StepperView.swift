@@ -11,8 +11,35 @@ struct StepperView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @State var items: [String] = []
+    
     var body: some View {
-        Text("Hello, Stepper!")
+        
+        Spacer(minLength: 50).fixedSize()
+        
+        Stepper("商品数を選択（最大5つまで）", onIncrement: {
+            if items.count < 5 {
+                items.append("商品")
+            }
+        }, onDecrement: {
+            if 0 < items.count {
+                items.removeLast()
+            }
+        })
+        .padding(.horizontal, 20)
+        
+        Divider()
+        
+        Spacer(minLength: 20).fixedSize()
+        
+        ForEach(items, id: \.self) { item in
+            VStack {
+                Text(item)
+                    .padding(10)
+                
+                Divider()
+            }
+        }
         
         Spacer()
         
