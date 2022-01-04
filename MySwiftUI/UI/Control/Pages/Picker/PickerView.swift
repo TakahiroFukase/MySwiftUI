@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-struct Store {
-    let name: String
-    let id: Int
-}
-
 struct PickerView: View {
     
     @Environment(\.presentationMode) var presentationMode
