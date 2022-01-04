@@ -14,6 +14,7 @@
 		860A93F02782E76400D74E7E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93EF2782E76400D74E7E /* SliderView.swift */; };
 		860A93F52782E76C00D74E7E /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A93F42782E76C00D74E7E /* StepperView.swift */; };
 		860A94022784719200D74E7E /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A94012784719200D74E7E /* PickerView.swift */; };
+		860A940E27847F8800D74E7E /* PickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A940D27847F8800D74E7E /* PickerViewModel.swift */; };
 		8643C11F2744BBA000BB9E04 /* LoremView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C11E2744BBA000BB9E04 /* LoremView.swift */; };
 		8643C124274534B500BB9E04 /* NeetQuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C123274534B500BB9E04 /* NeetQuestionService.swift */; };
 		8643C12A27467FAA00BB9E04 /* NeetQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8643C12927467FAA00BB9E04 /* NeetQuestion.swift */; };
@@ -62,6 +63,7 @@
 		860A93EF2782E76400D74E7E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		860A93F42782E76C00D74E7E /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		860A94012784719200D74E7E /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		860A940D27847F8800D74E7E /* PickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewModel.swift; sourceTree = "<group>"; };
 		8643C11E2744BBA000BB9E04 /* LoremView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremView.swift; sourceTree = "<group>"; };
 		8643C123274534B500BB9E04 /* NeetQuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeetQuestionService.swift; sourceTree = "<group>"; };
 		8643C12927467FAA00BB9E04 /* NeetQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeetQuestion.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				860A94012784719200D74E7E /* PickerView.swift */,
+				860A940D27847F8800D74E7E /* PickerViewModel.swift */,
 			);
 			path = Picker;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				8643C132274680EE00BB9E04 /* NeetQuestionViewModel.swift in Sources */,
 				860A93C32781D2AE00D74E7E /* BaseTabView.swift in Sources */,
 				86627D99273D54E10044A980 /* LoremService.swift in Sources */,
+				860A940E27847F8800D74E7E /* PickerViewModel.swift in Sources */,
 				86627D5F27341BF50044A980 /* SceneDelegate.swift in Sources */,
 				86CA69132778229400E88747 /* ProfileView.swift in Sources */,
 				86627D6127341BF50044A980 /* ContentView.swift in Sources */,

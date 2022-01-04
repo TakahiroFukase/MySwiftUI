@@ -11,11 +11,7 @@ struct PickerView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @State var genders: [String] = ["未選択", "女性", "男性", "その他"]
-    
-    @State var selectedIndex = 0
-    
-    @State var registeredGender = ""
+    @ObservedObject var viewModel = PickerViewModel()
     
     var body: some View {
         
@@ -24,7 +20,7 @@ struct PickerView: View {
         HStack {
             Spacer(minLength: 50).fixedSize()
             
-            Text("ユーザーの性別: \(registeredGender)")
+            Text("ユーザーの性別: \(viewModel.registeredGender)")
                 .bold()
 
             Spacer()
@@ -34,15 +30,15 @@ struct PickerView: View {
         
         Divider()
         
-        Picker("", selection: $selectedIndex, content: {
-            ForEach(0..<genders.count) { index in
-                Text(genders[index])
+        Picker("", selection: $viewModel.selectedIndex, content: {
+            ForEach(0..<viewModel.genders.count) { index in
+                Text(viewModel.genders[index])
             }
         })
         .labelsHidden()
         
         Button(action: {
-            registeredGender = genders[selectedIndex]
+            viewModel.registerGender()
         }, label: {
             Text("保存")
                 .bold()
