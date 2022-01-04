@@ -12,60 +12,89 @@ struct ControlBaseView: View {
     @State var isTogglePresented = false
     @State var isSliderPresented = false
     @State var isStepperPresented = false
+    @State var isPickerPresented = false
     
     var body: some View {
         
         VStack {
+            
             Spacer()
             
-            Button(action: {
-                isTogglePresented = true
-            }, label: {
-                Text("Toggleページへ")
-                    .bold()
-                    .frame(width: 200, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.orange)
-                    .cornerRadius(25)
-            })
-            .fullScreenCover(isPresented: $isTogglePresented) {
-                ToggleView()
+            VStack {
+                
+                Button(action: {
+                    isTogglePresented = true
+                }, label: {
+                    Text("Toggleページへ")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+                .fullScreenCover(isPresented: $isTogglePresented) {
+                    ToggleView()
+                }
+                
+                Spacer(minLength: 50).fixedSize()
             }
             
-            Spacer(minLength: 50).fixedSize()
-            
-            Button(action: {
-                isSliderPresented = true
-            }, label: {
-                Text("Sliderページへ")
-                    .bold()
-                    .frame(width: 200, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.orange)
-                    .cornerRadius(25)
-            })
-            .fullScreenCover(isPresented: $isSliderPresented) {
-                SliderView()
+            VStack {
+                
+                Button(action: {
+                    isSliderPresented = true
+                }, label: {
+                    Text("Sliderページへ")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+                .fullScreenCover(isPresented: $isSliderPresented) {
+                    SliderView()
+                }
+                
+                Spacer(minLength: 50).fixedSize()
             }
             
-            Spacer(minLength: 50).fixedSize()
+            VStack {
             
-            Button(action: {
-                isStepperPresented = true
-            }, label: {
-                Text("Stepperページへ")
-                    .bold()
-                    .frame(width: 200, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.orange)
-                    .cornerRadius(25)
-            })
-            .fullScreenCover(isPresented: $isStepperPresented) {
-                StepperView()
+                Button(action: {
+                    isStepperPresented = true
+                }, label: {
+                    Text("Stepperページへ")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+                .fullScreenCover(isPresented: $isStepperPresented) {
+                    StepperView()
+                }
+                
+                Spacer(minLength: 50).fixedSize()
             }
             
-            Spacer(minLength: 50).fixedSize()
-        
+            VStack {
+            
+                Button(action: {
+                    isPickerPresented = true
+                }, label: {
+                    Text("Pickerページへ")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+                .fullScreenCover(isPresented: $isPickerPresented) {
+                    PickerView()
+                }
+                
+                Spacer(minLength: 50).fixedSize()
+            }
         }
     }
 }
