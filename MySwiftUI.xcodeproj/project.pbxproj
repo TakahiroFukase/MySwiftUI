@@ -226,9 +226,17 @@
 				860A93EA2782E75300D74E7E /* ToggleView.swift */,
 				860A93EF2782E76400D74E7E /* SliderView.swift */,
 				860A93F42782E76C00D74E7E /* StepperView.swift */,
-				860A94012784719200D74E7E /* PickerView.swift */,
+				860A940627847E7F00D74E7E /* Picker */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		860A940627847E7F00D74E7E /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				860A94012784719200D74E7E /* PickerView.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		8643C12827467F7A00BB9E04 /* Entity */ = {
