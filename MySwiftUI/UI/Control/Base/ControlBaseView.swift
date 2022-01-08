@@ -96,25 +96,6 @@ struct ControlBaseView: View {
                 
                 Spacer(minLength: 50).fixedSize()
             }
-            
-            VStack {
-            
-                Button(action: {
-                    isFormPresented = true
-                }, label: {
-                    Text("Formページへ")
-                        .bold()
-                        .frame(width: 200, height: 50)
-                        .foregroundColor(.white)
-                        .background(Color.orange)
-                        .cornerRadius(25)
-                })
-                .fullScreenCover(isPresented: $isFormPresented) {
-                    FormView()
-                }
-                
-                Spacer(minLength: 50).fixedSize()
-            }
         }
     }
 }
