@@ -13,7 +13,6 @@ struct ControlBaseView: View {
     @State var isSliderPresented = false
     @State var isStepperPresented = false
     @State var isPickerPresented = false
-    @State var isFormPresented = false
     
     var body: some View {
         
