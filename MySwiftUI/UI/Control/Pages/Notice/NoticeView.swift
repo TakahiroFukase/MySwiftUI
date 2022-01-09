@@ -22,9 +22,11 @@ struct NoticeView: View, Identifiable {
             
             Spacer()
             
-            Text(isNew ? "NEW!" : "")
-                .foregroundColor(.red)
-                .bold()
+            if isNew {
+                Text("NEW!")
+                    .foregroundColor(.red)
+                    .bold()
+            }
         }
         .padding(10)
     }
