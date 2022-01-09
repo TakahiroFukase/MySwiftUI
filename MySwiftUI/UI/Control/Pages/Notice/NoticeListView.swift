@@ -12,7 +12,7 @@ struct NoticeListView: View {
     @Environment(\.presentationMode) var presentationMode
     
     let noticeViews: [NoticeView] = [
-        NoticeView(title: "本日全商品99%OFF!", isNew: true),
+        NoticeView(title: "【先日のお詫び】\n本日全商品99%OFF!", isNew: true),
         NoticeView(title: "システムエラーのお詫び（大泣）", isNew: true),
         NoticeView(title: "下北沢店リニューアルOPEN!", isNew: false)
     ]
