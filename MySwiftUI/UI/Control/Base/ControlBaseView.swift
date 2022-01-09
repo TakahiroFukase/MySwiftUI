@@ -13,6 +13,7 @@ struct ControlBaseView: View {
     @State var isSliderPresented = false
     @State var isStepperPresented = false
     @State var isPickerPresented = false
+    @State var isListPresented = false
     
     var body: some View {
         
@@ -91,6 +92,25 @@ struct ControlBaseView: View {
                 })
                 .fullScreenCover(isPresented: $isPickerPresented) {
                     PickerView()
+                }
+                
+                Spacer(minLength: 50).fixedSize()
+            }
+            
+            VStack {
+            
+                Button(action: {
+                    isListPresented = true
+                }, label: {
+                    Text("Listページへ")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+                .fullScreenCover(isPresented: $isListPresented) {
+                    ListView()
                 }
                 
                 Spacer(minLength: 50).fixedSize()
