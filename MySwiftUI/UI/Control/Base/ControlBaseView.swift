@@ -110,7 +110,7 @@ struct ControlBaseView: View {
                         .cornerRadius(25)
                 })
                 .fullScreenCover(isPresented: $isListPresented) {
-                    ListView()
+                    NoticeListView()
                 }
                 
                 Spacer(minLength: 50).fixedSize()
