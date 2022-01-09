@@ -7,29 +7,6 @@
 
 import SwiftUI
 
-struct NoticeView: View, Identifiable {
-    
-    var id = UUID()
-    let title: String
-    let isNew: Bool
-    
-    var body: some View {
-
-        HStack {
-            
-            Text(title)
-                .bold()
-            
-            Spacer()
-            
-            Text(isNew ? "NEW!" : "")
-                .foregroundColor(.red)
-                .bold()
-        }
-        .padding(10)
-    }
-}
-
 struct NoticeListView: View {
     
     @Environment(\.presentationMode) var presentationMode
