@@ -14,6 +14,7 @@ struct ControlBaseView: View {
     @State var isStepperPresented = false
     @State var isPickerPresented = false
     @State var isListPresented = false
+    @State var isScrollListPresented = false
     
     var body: some View {
         
@@ -111,6 +112,25 @@ struct ControlBaseView: View {
                 })
                 .fullScreenCover(isPresented: $isListPresented) {
                     NoticeListView()
+                }
+                
+                Spacer(minLength: 50).fixedSize()
+            }
+            
+            VStack {
+            
+                Button(action: {
+                    isScrollListPresented = true
+                }, label: {
+                    Text("ScrollListページへ")
+                        .bold()
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.orange)
+                        .cornerRadius(25)
+                })
+                .fullScreenCover(isPresented: $isScrollListPresented) {
+                    ScrollListView()
                 }
                 
                 Spacer(minLength: 50).fixedSize()
