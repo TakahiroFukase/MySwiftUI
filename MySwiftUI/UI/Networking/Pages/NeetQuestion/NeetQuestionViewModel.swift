@@ -11,7 +11,7 @@ class NeetQuestionViewModel: ObservableObject {
     
     @Published var questions: [NeetQuestion] = []
     
-    private let neetQuestionService: NeetQuestionServiceProtocol = NeetQuestionService()
+    private let neetQuestionService: NeetQuestionServiceProtocol = NeetQuestionServiceMock()
     
     init() {
         getAllQuestions()
