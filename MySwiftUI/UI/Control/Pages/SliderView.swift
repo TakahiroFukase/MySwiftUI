@@ -36,7 +36,7 @@ struct SliderView: View {
                     .bold()
                     .foregroundColor(.red)
 
-                VStack {
+                VStack(spacing: 0) {
                     
                     Text("")
                         .frame(width: imageWidth,
