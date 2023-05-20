@@ -11,12 +11,14 @@ class NeetQuestionViewModel: ObservableObject {
     
     @Published var questions: [NeetQuestion] = []
     
+    private let neetQuestionService: NeetQuestionServiceProtocol = NeetQuestionService()
+    
     init() {
         getAllQuestions()
     }
     
     private func getAllQuestions() {
-        NeetQuestionService().getAllQuestions { questions in
+        neetQuestionService.getAllQuestions { questions in
             self.questions = questions
         }
     }

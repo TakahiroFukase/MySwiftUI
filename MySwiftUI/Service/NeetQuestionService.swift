@@ -7,8 +7,12 @@
 
 import Foundation
 
+protocol NeetQuestionServiceProtocol {
+    func getAllQuestions(res: @escaping ([NeetQuestion])->())
+}
+
 /// ニート診断の質問一覧を取得するサービスクラス
-class NeetQuestionService {
+class NeetQuestionService: NeetQuestionServiceProtocol {
     
     let url = URL(string: "https://takahirofukase.com/sample/questions.json")
     
