@@ -79,7 +79,7 @@ struct LoginView: View {
             return
         }
         
-        if id == "a" && password == "b" {
+        if id == "1" && password == "2" {
             // ID, Passwordが正しければメイン画面に進む
             isBaseTabViewPresented = true
         } else {
