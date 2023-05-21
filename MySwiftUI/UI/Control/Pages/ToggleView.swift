@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ToggleView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
+    @ObservedObject var controlRouter = ControlRouter.shared
+        
     @State var isToggleOn = false
     
     var body: some View {
@@ -42,8 +42,8 @@ struct ToggleView: View {
             .padding(.horizontal, 20)
             
             Button(action: {
-                // この画面を閉じる
-                presentationMode.wrappedValue.dismiss()
+                // 選択画面に戻る
+                controlRouter.screenState = .select
             }, label: {
                 Text("閉じる")
                     .bold()

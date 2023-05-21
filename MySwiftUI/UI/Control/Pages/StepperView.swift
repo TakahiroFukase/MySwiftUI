@@ -9,8 +9,8 @@ import SwiftUI
 
 struct StepperView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
+    @ObservedObject var controlRouter = ControlRouter.shared
+        
     @State var items: [String] = []
     
     var body: some View {
@@ -46,8 +46,8 @@ struct StepperView: View {
             Spacer()
             
             Button(action: {
-                // この画面を閉じる
-                presentationMode.wrappedValue.dismiss()
+                // 選択画面に戻る
+                controlRouter.screenState = .select
             }, label: {
                 Text("閉じる")
                     .bold()

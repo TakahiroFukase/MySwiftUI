@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ScrollListView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
+    @ObservedObject var controlRouter = ControlRouter.shared
+
     let noticeViews: [NoticeView] = [
         NoticeView(title: "【先日のお詫び】\n本日全商品99%OFF!", isNew: true),
         NoticeView(title: "システムエラーのお詫び（大泣）", isNew: true),
@@ -46,8 +46,8 @@ struct ScrollListView: View {
             }
             
             Button(action: {
-                // この画面を閉じる
-                presentationMode.wrappedValue.dismiss()
+                // 選択画面に戻る
+                controlRouter.screenState = .select
             }, label: {
                 Text("閉じる")
                     .bold()

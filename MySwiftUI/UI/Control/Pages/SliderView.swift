@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SliderView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
+    @ObservedObject var controlRouter = ControlRouter.shared
+        
     @State var topSliderValue = 0.0
     @State var middleSliderValue = 0.0
     @State var bottomSliderValue = 0.0
@@ -76,8 +76,8 @@ struct SliderView: View {
             Spacer()
             
             Button(action: {
-                // この画面を閉じる
-                presentationMode.wrappedValue.dismiss()
+                // 選択画面に戻る
+                controlRouter.screenState = .select
             }, label: {
                 Text("閉じる")
                     .bold()

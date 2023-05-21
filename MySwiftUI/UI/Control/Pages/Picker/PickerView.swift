@@ -9,8 +9,8 @@ import SwiftUI
 
 struct PickerView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
+    @ObservedObject var controlRouter = ControlRouter.shared
+        
     @ObservedObject var viewModel = PickerViewModel()
     
     var body: some View {
@@ -101,8 +101,8 @@ struct PickerView: View {
         Spacer()
         
         Button(action: {
-            // この画面を閉じる
-            presentationMode.wrappedValue.dismiss()
+            // 選択画面に戻る
+            controlRouter.screenState = .select
         }, label: {
             Text("閉じる")
                 .bold()

@@ -9,12 +9,7 @@ import SwiftUI
 
 struct ControlSelectView: View {
     
-    @State var isTogglePresented = false
-    @State var isSliderPresented = false
-    @State var isStepperPresented = false
-    @State var isPickerPresented = false
-    @State var isListPresented = false
-    @State var isScrollListPresented = false
+    @ObservedObject var controlRouter = ControlRouter.shared
     
     var body: some View {
         
@@ -25,7 +20,7 @@ struct ControlSelectView: View {
             VStack {
                 
                 Button(action: {
-                    isTogglePresented = true
+                    controlRouter.screenState = .toggle
                 }, label: {
                     Text("Toggleページへ")
                         .bold()
@@ -34,9 +29,6 @@ struct ControlSelectView: View {
                         .background(Color.orange)
                         .cornerRadius(25)
                 })
-                .fullScreenCover(isPresented: $isTogglePresented) {
-                    ToggleView()
-                }
                 
                 Spacer(minLength: 50).fixedSize()
             }
@@ -44,7 +36,7 @@ struct ControlSelectView: View {
             VStack {
                 
                 Button(action: {
-                    isSliderPresented = true
+                    controlRouter.screenState = .slider
                 }, label: {
                     Text("Sliderページへ")
                         .bold()
@@ -53,9 +45,6 @@ struct ControlSelectView: View {
                         .background(Color.orange)
                         .cornerRadius(25)
                 })
-                .fullScreenCover(isPresented: $isSliderPresented) {
-                    SliderView()
-                }
                 
                 Spacer(minLength: 50).fixedSize()
             }
@@ -63,7 +52,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    isStepperPresented = true
+                    controlRouter.screenState = .stepper
                 }, label: {
                     Text("Stepperページへ")
                         .bold()
@@ -72,9 +61,6 @@ struct ControlSelectView: View {
                         .background(Color.orange)
                         .cornerRadius(25)
                 })
-                .fullScreenCover(isPresented: $isStepperPresented) {
-                    StepperView()
-                }
                 
                 Spacer(minLength: 50).fixedSize()
             }
@@ -82,7 +68,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    isPickerPresented = true
+                    controlRouter.screenState = .picker
                 }, label: {
                     Text("Pickerページへ")
                         .bold()
@@ -91,9 +77,6 @@ struct ControlSelectView: View {
                         .background(Color.orange)
                         .cornerRadius(25)
                 })
-                .fullScreenCover(isPresented: $isPickerPresented) {
-                    PickerView()
-                }
                 
                 Spacer(minLength: 50).fixedSize()
             }
@@ -101,7 +84,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    isListPresented = true
+                    controlRouter.screenState = .list
                 }, label: {
                     Text("Listページへ")
                         .bold()
@@ -110,9 +93,6 @@ struct ControlSelectView: View {
                         .background(Color.orange)
                         .cornerRadius(25)
                 })
-                .fullScreenCover(isPresented: $isListPresented) {
-                    NoticeListView()
-                }
                 
                 Spacer(minLength: 50).fixedSize()
             }
@@ -120,7 +100,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    isScrollListPresented = true
+                    controlRouter.screenState = .scroll
                 }, label: {
                     Text("ScrollListページへ")
                         .bold()
@@ -129,13 +109,11 @@ struct ControlSelectView: View {
                         .background(Color.orange)
                         .cornerRadius(25)
                 })
-                .fullScreenCover(isPresented: $isScrollListPresented) {
-                    ScrollListView()
-                }
                 
                 Spacer(minLength: 50).fixedSize()
             }
-        }    }
+        }
+    }
 }
 
 struct ControlSelectView_Previews: PreviewProvider {

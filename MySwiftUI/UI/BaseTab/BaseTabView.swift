@@ -20,7 +20,7 @@ struct BaseTabView: View {
                     Text("Content")
                 }
             
-            ControlSelectView()
+            ControlBaseView()
                 .tabItem {
                     Text("Control")
                 }
