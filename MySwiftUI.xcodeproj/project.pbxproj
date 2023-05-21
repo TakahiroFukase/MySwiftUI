@@ -34,6 +34,7 @@
 		86627D7F27341BF60044A980 /* MySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D7E27341BF60044A980 /* MySwiftUIUITests.swift */; };
 		86627D99273D54E10044A980 /* LoremService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D98273D54E10044A980 /* LoremService.swift */; };
 		86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627DA5273E918B0044A980 /* LoremViewModel.swift */; };
+		8674A9892A1A322F0014DD10 /* ControlSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9882A1A322F0014DD10 /* ControlSelectView.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
@@ -93,6 +94,7 @@
 		86627D8027341BF60044A980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86627D98273D54E10044A980 /* LoremService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremService.swift; sourceTree = "<group>"; };
 		86627DA5273E918B0044A980 /* LoremViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremViewModel.swift; sourceTree = "<group>"; };
+		8674A9882A1A322F0014DD10 /* ControlSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSelectView.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		860A93E42782E60B00D74E7E /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				8674A9882A1A322F0014DD10 /* ControlSelectView.swift */,
 				860A93EA2782E75300D74E7E /* ToggleView.swift */,
 				860A93EF2782E76400D74E7E /* SliderView.swift */,
 				860A93F42782E76C00D74E7E /* StepperView.swift */,
@@ -493,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8674A9892A1A322F0014DD10 /* ControlSelectView.swift in Sources */,
 				8692B6EB275E3CF600D58B87 /* TextFileService.swift in Sources */,
 				865BFDF0278A99B700A95014 /* ScrollListView.swift in Sources */,
 				86CA690E2778215700E88747 /* ProfileViewModel.swift in Sources */,
