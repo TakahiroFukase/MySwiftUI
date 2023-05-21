@@ -35,6 +35,7 @@
 		86627D99273D54E10044A980 /* LoremService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627D98273D54E10044A980 /* LoremService.swift */; };
 		86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627DA5273E918B0044A980 /* LoremViewModel.swift */; };
 		8674A9892A1A322F0014DD10 /* ControlSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9882A1A322F0014DD10 /* ControlSelectView.swift */; };
+		8674A98B2A1A33880014DD10 /* ControlRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A98A2A1A33880014DD10 /* ControlRouter.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
@@ -95,6 +96,7 @@
 		86627D98273D54E10044A980 /* LoremService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremService.swift; sourceTree = "<group>"; };
 		86627DA5273E918B0044A980 /* LoremViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremViewModel.swift; sourceTree = "<group>"; };
 		8674A9882A1A322F0014DD10 /* ControlSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSelectView.swift; sourceTree = "<group>"; };
+		8674A98A2A1A33880014DD10 /* ControlRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlRouter.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				860A93E52782E62000D74E7E /* ControlBaseView.swift */,
+				8674A98A2A1A33880014DD10 /* ControlRouter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				868C656927534D5C008D6C7C /* PicsumService.swift in Sources */,
 				8643C137274681D200BB9E04 /* NeetQuestionView.swift in Sources */,
 				860A93F02782E76400D74E7E /* SliderView.swift in Sources */,
+				8674A98B2A1A33880014DD10 /* ControlRouter.swift in Sources */,
 				86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */,
 				868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */,
 				860A93EB2782E75300D74E7E /* ToggleView.swift in Sources */,
