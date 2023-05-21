@@ -21,7 +21,7 @@ struct ToggleView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: UIScreen.main.bounds.width,
-                       height: UIScreen.main.bounds.width / 1096 * 1644)
+                       height: UIScreen.main.bounds.width)
             
             HStack {
                 

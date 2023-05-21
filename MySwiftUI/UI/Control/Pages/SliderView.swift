@@ -16,8 +16,8 @@ struct SliderView: View {
     @State var bottomSliderValue = 0.0
     @State var allMaxMessage = ""
     
-    let imageWidth = UIScreen.main.bounds.width - 50
-    let imageHeight = (UIScreen.main.bounds.width - 50) / 1096 * 1644
+    let imageWidth = UIScreen.main.bounds.width
+    let imageHeight = UIScreen.main.bounds.width
     
     var body: some View {
         
