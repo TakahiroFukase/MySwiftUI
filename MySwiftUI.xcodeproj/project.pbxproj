@@ -36,6 +36,7 @@
 		86627DA6273E918B0044A980 /* LoremViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86627DA5273E918B0044A980 /* LoremViewModel.swift */; };
 		8674A9892A1A322F0014DD10 /* ControlSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9882A1A322F0014DD10 /* ControlSelectView.swift */; };
 		8674A98B2A1A33880014DD10 /* ControlRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A98A2A1A33880014DD10 /* ControlRouter.swift */; };
+		8674A98E2A20DCE30014DD10 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A98D2A20DCE30014DD10 /* LoginViewModel.swift */; };
 		8674A9912A20DF6A0014DD10 /* UserDefaultsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9902A20DF690014DD10 /* UserDefaultsClient.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
@@ -98,6 +99,7 @@
 		86627DA5273E918B0044A980 /* LoremViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremViewModel.swift; sourceTree = "<group>"; };
 		8674A9882A1A322F0014DD10 /* ControlSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSelectView.swift; sourceTree = "<group>"; };
 		8674A98A2A1A33880014DD10 /* ControlRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlRouter.swift; sourceTree = "<group>"; };
+		8674A98D2A20DCE30014DD10 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8674A9902A20DF690014DD10 /* UserDefaultsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsClient.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				860A941227891D5700D74E7E /* LoginView.swift */,
+				8674A98D2A20DCE30014DD10 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				868C6573275352E2008D6C7C /* PicsumView.swift in Sources */,
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
 				860A93F52782E76C00D74E7E /* StepperView.swift in Sources */,
+				8674A98E2A20DCE30014DD10 /* LoginViewModel.swift in Sources */,
 				860A94022784719200D74E7E /* PickerView.swift in Sources */,
 				865BFDDF278A811D00A95014 /* NoticeListView.swift in Sources */,
 				860A93E62782E62000D74E7E /* ControlBaseView.swift in Sources */,
