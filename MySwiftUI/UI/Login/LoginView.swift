@@ -18,6 +18,8 @@ struct LoginView: View {
     @State var loginErrorTitle = ""
     @State var isLoginErrorPresented = false
     
+    @ObservedObject var viewModel = LoginViewModel()
+    
     var body: some View {
         
         VStack {
@@ -42,6 +44,15 @@ struct LoginView: View {
                     Toggle(isOn: $showPassword, label: {
                         Text("Show Password")
                     })
+                }
+                
+                Section(header: Text("")) {
+                    Toggle(isOn: $viewModel.shouldShowAleartWhenNeeded, label: {
+                        Text("Show Alert When Needed")
+                    })
+                    .onChange(of: viewModel.shouldShowAleartWhenNeeded) { _ in
+                        viewModel.didChangeToggle()
+                    }
                 }
             }
             
