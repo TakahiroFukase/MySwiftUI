@@ -29,6 +29,8 @@ struct ControlBaseView: View {
                 NoticeListView()
             case .scroll:
                 ScrollListView()
+            case let .alert(nextScreen):
+                AlertView(viewModel: AlertViewModel(nextScreen: nextScreen))
             }
         }
     }

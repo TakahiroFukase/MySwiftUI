@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ControlScreen {
+indirect enum ControlScreen {
     case select
     case toggle
     case slider
@@ -15,6 +15,7 @@ enum ControlScreen {
     case picker
     case list
     case scroll
+    case alert(ControlScreen)
 }
 
 final class ControlRouter: ObservableObject {
