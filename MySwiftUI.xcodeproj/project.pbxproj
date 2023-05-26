@@ -38,6 +38,7 @@
 		8674A98B2A1A33880014DD10 /* ControlRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A98A2A1A33880014DD10 /* ControlRouter.swift */; };
 		8674A98E2A20DCE30014DD10 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A98D2A20DCE30014DD10 /* LoginViewModel.swift */; };
 		8674A9912A20DF6A0014DD10 /* UserDefaultsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9902A20DF690014DD10 /* UserDefaultsClient.swift */; };
+		8674A9972A2106540014DD10 /* ControlSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9962A2106540014DD10 /* ControlSelectViewModel.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
@@ -101,6 +102,7 @@
 		8674A98A2A1A33880014DD10 /* ControlRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlRouter.swift; sourceTree = "<group>"; };
 		8674A98D2A20DCE30014DD10 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8674A9902A20DF690014DD10 /* UserDefaultsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsClient.swift; sourceTree = "<group>"; };
+		8674A9962A2106540014DD10 /* ControlSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSelectViewModel.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
@@ -242,7 +244,7 @@
 		860A93E42782E60B00D74E7E /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				8674A9882A1A322F0014DD10 /* ControlSelectView.swift */,
+				8674A9952A21063E0014DD10 /* ControlSelect */,
 				860A93EA2782E75300D74E7E /* ToggleView.swift */,
 				860A93EF2782E76400D74E7E /* SliderView.swift */,
 				860A93F42782E76C00D74E7E /* StepperView.swift */,
@@ -383,6 +385,15 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		8674A9952A21063E0014DD10 /* ControlSelect */ = {
+			isa = PBXGroup;
+			children = (
+				8674A9882A1A322F0014DD10 /* ControlSelectView.swift */,
+				8674A9962A2106540014DD10 /* ControlSelectViewModel.swift */,
+			);
+			path = ControlSelect;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -513,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8674A9972A2106540014DD10 /* ControlSelectViewModel.swift in Sources */,
 				8674A9892A1A322F0014DD10 /* ControlSelectView.swift in Sources */,
 				8692B6EB275E3CF600D58B87 /* TextFileService.swift in Sources */,
 				865BFDF0278A99B700A95014 /* ScrollListView.swift in Sources */,

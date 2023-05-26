@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ControlSelectView: View {
     
-    @ObservedObject var controlRouter = ControlRouter.shared
+    @ObservedObject var viewModel = ControlSelectViewModel()
     
     var body: some View {
         
@@ -20,7 +20,7 @@ struct ControlSelectView: View {
             VStack {
                 
                 Button(action: {
-                    controlRouter.screenState = .toggle
+                    viewModel.didTapToggleButton()
                 }, label: {
                     Text("Toggleページへ")
                         .bold()
@@ -36,7 +36,7 @@ struct ControlSelectView: View {
             VStack {
                 
                 Button(action: {
-                    controlRouter.screenState = .slider
+                    viewModel.didTapSliderButton()
                 }, label: {
                     Text("Sliderページへ")
                         .bold()
@@ -52,7 +52,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    controlRouter.screenState = .stepper
+                    viewModel.didTapStepperButton()
                 }, label: {
                     Text("Stepperページへ")
                         .bold()
@@ -68,7 +68,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    controlRouter.screenState = .picker
+                    viewModel.didTapPickerButton()
                 }, label: {
                     Text("Pickerページへ")
                         .bold()
@@ -84,7 +84,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    controlRouter.screenState = .list
+                    viewModel.didTapListButton()
                 }, label: {
                     Text("Listページへ")
                         .bold()
@@ -100,7 +100,7 @@ struct ControlSelectView: View {
             VStack {
             
                 Button(action: {
-                    controlRouter.screenState = .scroll
+                    viewModel.didTapScrollButton()
                 }, label: {
                     Text("ScrollListページへ")
                         .bold()
