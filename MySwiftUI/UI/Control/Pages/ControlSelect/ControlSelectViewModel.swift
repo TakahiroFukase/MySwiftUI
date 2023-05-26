@@ -12,11 +12,19 @@ class ControlSelectViewModel: ObservableObject {
     @Published var controlRouter = ControlRouter.shared
         
     func didTapToggleButton() {
-        controlRouter.screenState = .alert(.toggle)
+        if UserDefaultsClient.shouldShowAlertWhenNeeded {
+            controlRouter.screenState = .alert(.toggle)
+        } else {
+            controlRouter.screenState = .toggle
+        }
     }
     
     func didTapSliderButton() {
-        controlRouter.screenState = .alert(.slider)
+        if UserDefaultsClient.shouldShowAlertWhenNeeded {
+            controlRouter.screenState = .alert(.slider)
+        } else {
+            controlRouter.screenState = .slider
+        }
     }
     
     func didTapStepperButton() {
