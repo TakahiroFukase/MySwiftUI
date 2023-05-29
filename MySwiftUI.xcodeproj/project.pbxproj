@@ -41,6 +41,7 @@
 		8674A9972A2106540014DD10 /* ControlSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9962A2106540014DD10 /* ControlSelectViewModel.swift */; };
 		8674A99A2A210B540014DD10 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9992A210B540014DD10 /* AlertViewModel.swift */; };
 		8674A99C2A210B640014DD10 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A99B2A210B640014DD10 /* AlertView.swift */; };
+		8674A99F2A24D02F0014DD10 /* UserSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A99E2A24D02F0014DD10 /* UserSettingModel.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
@@ -107,6 +108,7 @@
 		8674A9962A2106540014DD10 /* ControlSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSelectViewModel.swift; sourceTree = "<group>"; };
 		8674A9992A210B540014DD10 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		8674A99B2A210B640014DD10 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		8674A99E2A24D02F0014DD10 /* UserSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingModel.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				8643C12827467F7A00BB9E04 /* Entity */,
 				86627DA2273E90400044A980 /* UI */,
 				86627DA3273E904D0044A980 /* Service */,
+				8674A99D2A24CF660014DD10 /* Model */,
 				86627D6727341BF60044A980 /* LaunchScreen.storyboard */,
 				86627D6A27341BF60044A980 /* Info.plist */,
 				86627D6427341BF60044A980 /* Preview Content */,
@@ -406,6 +409,14 @@
 				8674A9992A210B540014DD10 /* AlertViewModel.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		8674A99D2A24CF660014DD10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8674A99E2A24D02F0014DD10 /* UserSettingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +568,7 @@
 				860A93EB2782E75300D74E7E /* ToggleView.swift in Sources */,
 				868C6573275352E2008D6C7C /* PicsumView.swift in Sources */,
 				86627D5D27341BF50044A980 /* AppDelegate.swift in Sources */,
+				8674A99F2A24D02F0014DD10 /* UserSettingModel.swift in Sources */,
 				860A93F52782E76C00D74E7E /* StepperView.swift in Sources */,
 				8674A98E2A20DCE30014DD10 /* LoginViewModel.swift in Sources */,
 				860A94022784719200D74E7E /* PickerView.swift in Sources */,

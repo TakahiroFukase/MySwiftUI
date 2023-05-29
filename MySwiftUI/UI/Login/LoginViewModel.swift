@@ -10,13 +10,16 @@ import Foundation
 class LoginViewModel: ObservableObject {
     
     @Published var shouldShowAleartWhenNeeded: Bool
+    
+    private let userSettingModel: UserSettingModelProtocol
         
-    init() {
-        shouldShowAleartWhenNeeded = UserDefaultsClient.shouldShowAlertWhenNeeded
+    init(userSettingModel: UserSettingModelProtocol = UserSettingModel()) {
+        self.userSettingModel = userSettingModel
+        shouldShowAleartWhenNeeded = userSettingModel.getShouldShowAlertWhenNeeded()
     }
 
     
     func didChangeToggle() {
-        UserDefaultsClient.shouldShowAlertWhenNeeded = shouldShowAleartWhenNeeded
+        userSettingModel.setShouldShowAlertWhenNeeded(shouldShowAleartWhenNeeded)
     }
 }

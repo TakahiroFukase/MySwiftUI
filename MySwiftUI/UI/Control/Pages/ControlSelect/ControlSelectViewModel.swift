@@ -10,9 +10,15 @@ import Foundation
 class ControlSelectViewModel: ObservableObject {
         
     @Published var controlRouter = ControlRouter.shared
+    
+    private let userSettingModel: UserSettingModelProtocol
+    
+    init(userSettingModel: UserSettingModelProtocol = UserSettingModel()) {
+        self.userSettingModel = userSettingModel
+    }
         
     func didTapToggleButton() {
-        if UserDefaultsClient.shouldShowAlertWhenNeeded {
+        if userSettingModel.getShouldShowAlertWhenNeeded() {
             controlRouter.screenState = .alert(.toggle)
         } else {
             controlRouter.screenState = .toggle
@@ -20,7 +26,7 @@ class ControlSelectViewModel: ObservableObject {
     }
     
     func didTapSliderButton() {
-        if UserDefaultsClient.shouldShowAlertWhenNeeded {
+        if userSettingModel.getShouldShowAlertWhenNeeded() {
             controlRouter.screenState = .alert(.slider)
         } else {
             controlRouter.screenState = .slider
