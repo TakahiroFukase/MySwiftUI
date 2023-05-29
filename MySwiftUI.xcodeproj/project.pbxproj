@@ -42,6 +42,7 @@
 		8674A99A2A210B540014DD10 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9992A210B540014DD10 /* AlertViewModel.swift */; };
 		8674A99C2A210B640014DD10 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A99B2A210B640014DD10 /* AlertView.swift */; };
 		8674A99F2A24D02F0014DD10 /* UserSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A99E2A24D02F0014DD10 /* UserSettingModel.swift */; };
+		8674A9A22A24D41E0014DD10 /* ControlSelectViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674A9A12A24D41E0014DD10 /* ControlSelectViewModelTests.swift */; };
 		868C656927534D5C008D6C7C /* PicsumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656827534D5C008D6C7C /* PicsumService.swift */; };
 		868C656E275350DD008D6C7C /* PicsumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C656D275350DD008D6C7C /* PicsumViewModel.swift */; };
 		868C6573275352E2008D6C7C /* PicsumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C6572275352E2008D6C7C /* PicsumView.swift */; };
@@ -109,6 +110,7 @@
 		8674A9992A210B540014DD10 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		8674A99B2A210B640014DD10 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		8674A99E2A24D02F0014DD10 /* UserSettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingModel.swift; sourceTree = "<group>"; };
+		8674A9A12A24D41E0014DD10 /* ControlSelectViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSelectViewModelTests.swift; sourceTree = "<group>"; };
 		868C656827534D5C008D6C7C /* PicsumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumService.swift; sourceTree = "<group>"; };
 		868C656D275350DD008D6C7C /* PicsumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumViewModel.swift; sourceTree = "<group>"; };
 		868C6572275352E2008D6C7C /* PicsumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumView.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 			children = (
 				86627D7327341BF60044A980 /* MySwiftUITests.swift */,
 				86627D7527341BF60044A980 /* Info.plist */,
+				8674A9A12A24D41E0014DD10 /* ControlSelectViewModelTests.swift */,
 			);
 			path = MySwiftUITests;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8674A9A22A24D41E0014DD10 /* ControlSelectViewModelTests.swift in Sources */,
 				86627D7427341BF60044A980 /* MySwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

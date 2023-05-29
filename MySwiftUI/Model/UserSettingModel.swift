@@ -23,3 +23,16 @@ class UserSettingModel: UserSettingModelProtocol {
         UserDefaultsClient.shouldShowAlertWhenNeeded = shouldShowAlertWhenNeeded
     }
 }
+
+class MockUserSettingModel: UserSettingModelProtocol {
+    
+    var shouldShowAlertWhenNeeded: Bool = false
+    
+    func getShouldShowAlertWhenNeeded() -> Bool {
+        return shouldShowAlertWhenNeeded
+    }
+    
+    func setShouldShowAlertWhenNeeded(_ shouldShowAlertWhenNeeded: Bool) {
+        // テストで必要になったら、ここに処理を書くこと
+    }
+}
